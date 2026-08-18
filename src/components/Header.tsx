@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import Link from 'next/link';
+import { Link } from 'react-router-dom';
 import { useThemeStore } from '@/store/themeStore';
 import { SunIcon, MoonIcon } from '@radix-ui/react-icons';
 import { cn } from '@/utils/cn';
@@ -23,27 +23,43 @@ const Header = () => {
     <header className={cn('border-b border-border dark:border-border-dark mb-6')}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-stretch gap-4">
         {/* Logo */}
-        <Link href="/" className="flex flex-col items-center gap-2">
+        <Link to="/" className="flex flex-col items-center gap-2">
           <span className="text-2xl font-bold text-accent">Dhikr</span>
           <span className="text-sm text-text-secondary">Tracker</span>
         </Link>
 
         {/* Nav Links */}
         <nav className="hidden sm:flex gap-6">
-          <Link to="/dashboard"
-                className="text-text-primary hover:text-accent transition-colors">
+          <Link
+            to="/dashboard"
+            className={cn(
+              'text-text-primary hover:text-accent transition-colors'
+            )}
+          >
             Dashboard
           </Link>
-          <Link to="/counter"
-                className="text-text-primary hover:text-accent transition-colors">
+          <Link
+            to="/counter"
+            className={cn(
+              'text-text-primary hover:text-accent transition-colors'
+            )}
+          >
             Counter
           </Link>
-          <Link to="/history"
-                className="text-text-primary hover:text-accent transition-colors">
+          <Link
+            to="/history"
+            className={cn(
+              'text-text-primary hover:text-accent transition-colors'
+            )}
+          >
             History
           </Link>
-          <Link to="/statistics"
-                className="text-text-primary hover:text-accent transition-colors">
+          <Link
+            to="/statistics"
+            className={cn(
+              'text-text-primary hover:text-accent transition-colors'
+            )}
+          >
             Statistics
           </Link>
         </nav>

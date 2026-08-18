@@ -17,53 +17,53 @@ export default defineConfig({
         background_color: '#F8F9FA',
         display: 'standalone',
         orientation: 'portrait-primary',
-        scope: '/',
-        start_url: '/',
+        scope: '/dhikr-tracker/',
+        start_url: '/dhikr-tracker/',
         icons: [
           {
-            src: '/icon-72.png',
+            src: '/dhikr-tracker/icon-72.png',
             sizes: '72x72',
             type: 'image/png',
             purpose: 'maskable any'
           },
           {
-            src: '/icon-96.png',
+            src: '/dhikr-tracker/icon-96.png',
             sizes: '96x96',
             type: 'image/png',
             purpose: 'maskable any'
           },
           {
-            src: '/icon-128.png',
+            src: '/dhikr-tracker/icon-128.png',
             sizes: '128x128',
             type: 'image/png',
             purpose: 'maskable any'
           },
           {
-            src: '/icon-144.png',
+            src: '/dhikr-tracker/icon-144.png',
             sizes: '144x144',
             type: 'image/png',
             purpose: 'maskable any'
           },
           {
-            src: '/icon-152.png',
+            src: '/dhikr-tracker/icon-152.png',
             sizes: '152x152',
             type: 'image/png',
             purpose: 'maskable any'
           },
           {
-            src: '/icon-192.png',
+            src: '/dhikr-tracker/icon-192.png',
             sizes: '192x192',
             type: 'image/png',
             purpose: 'maskable any'
           },
           {
-            src: '/icon-384.png',
+            src: '/dhikr-tracker/icon-384.png',
             sizes: '384x384',
             type: 'image/png',
             purpose: 'maskable any'
           },
           {
-            src: '/icon-512.png',
+            src: '/dhikr-tracker/icon-512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable any'
@@ -76,15 +76,15 @@ export default defineConfig({
             name: 'New Dhikr',
             short_name: 'New',
             description: 'Create a new Dhikr',
-            url: '/dhikr/new',
-            icons: [{ src: '/icon-192.png', sizes: '192x192' }]
+            url: '/dhikr-tracker/dhikr/new',
+            icons: [{ src: '/dhikr-tracker/icon-192.png', sizes: '192x192' }]
           },
           {
             name: 'Counter',
             short_name: 'Count',
             description: 'Open counter screen',
-            url: '/counter',
-            icons: [{ src: '/icon-192.png', sizes: '192x192' }]
+            url: '/dhikr-tracker/counter',
+            icons: [{ src: '/dhikr-tracker/icon-192.png', sizes: '192x192' }]
           }
         ]
       },
@@ -126,6 +126,7 @@ export default defineConfig({
       }
     })
   ],
+  base: '/dhikr-tracker/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

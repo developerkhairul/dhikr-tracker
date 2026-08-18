@@ -17,7 +17,7 @@
     "@tanstack/react-query": "^5.39.2",
     "date-fns": "^3.6.0",
     "framer-motion": "^11.5.2",
-    "lucide-react": "^0.441.1",
+    "lucide-react": "^0.453.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
@@ -47,8 +47,7 @@
     "typescript": "^5.5.3",
     "vite": "^5.3.5",
     "vite-plugin-pwa": "^0.20.5",
-    "vite-plugin-svger": "^4.0.0",
-    "vitest": "^1.4.0"
+        "vitest": "^1.4.0"
   },
   "keywords": [
     "dhikr",
