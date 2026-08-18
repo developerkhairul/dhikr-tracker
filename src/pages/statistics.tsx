@@ -77,7 +77,7 @@ const Statistics = () => {
             </div>
             <div className="flex items-center justify-between">
               <span className="text-sm text-text-secondary">Consistency</span>
-              <Badge variant="primary">85%</span>
+              <Badge variant="primary">85%</Badge>
             </div>
             <div className="flex items-center justify-between">
               <span className="text-sm text-text-secondary">Goal Progress</span>
